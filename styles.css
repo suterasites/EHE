@@ -587,6 +587,15 @@ p { margin: 0 0 1em; }
 }
 .footer-col ul { display: flex; flex-direction: column; gap: 0.5rem; }
 .footer-col a, .footer-col li { color: var(--grey-300); font-size: 0.95rem; }
+.footer-social { flex-direction: row !important; gap: 0.75rem !important; margin-top: 1rem; }
+.footer-social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px;
+  border: 1px solid var(--grey-700);
+  border-radius: var(--radius);
+  color: var(--grey-300);
+}
+.footer-social .icon { width: 18px; height: 18px; }
 
 .footer-bottom {
   border-top: 1px solid var(--charcoal);
