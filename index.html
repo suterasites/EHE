@@ -115,24 +115,11 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="top-bar">
-  <div class="container top-bar-inner">
-    <a href="tel:0437142499" class="top-bar-link" aria-label="Call Earth Haul Excavations">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>
-      0437 142 499
-    </a>
-    <a href="mailto:earthhaulexcavations@gmail.com" class="top-bar-link top-bar-email" aria-label="Email Earth Haul Excavations">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4v10h16V8l-8 5z"/></svg>
-      earthhaulexcavations@gmail.com
-    </a>
-    <span class="top-bar-area">Servicing Benalla and surrounding areas</span>
-  </div>
-</div>
-
 <header class="site-header" id="top">
   <div class="site-nav-bar">
-   <div class="container header-inner">
-    <a href="/" class="brand brand-text" aria-label="Earth Haul Excavations home">EHE</a>
+    <a href="/" class="brand brand-mobile" aria-label="Earth Haul Excavations home">
+      <img src="assets/logo/ehe-logo.webp" alt="Earth Haul Excavations logo" class="brand-logo" width="48" height="48">
+    </a>
 
     <nav class="primary-nav" aria-label="Primary navigation">
       <ul class="mega-nav">
@@ -205,19 +192,24 @@
           </div>
         </li>
 
+        <li class="nav-brand-slot">
+          <a href="/" class="brand brand-pill" aria-label="Earth Haul Excavations home">
+            <img src="assets/logo/ehe-logo.webp" alt="" class="brand-logo" width="56" height="56">
+          </a>
+        </li>
+
         <li><a href="#projects" class="mega-direct">Projects</a></li>
         <li><a href="#contact" class="mega-direct">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-cta">
-      <a href="#contact" class="btn btn-primary">Request a Quote</a>
+      <a href="#contact" class="btn btn-quote">Request a Quote</a>
     </div>
 
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
     </button>
-  </div>
 
   <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation" hidden>
     <ul class="mobile-mega">
@@ -251,34 +243,17 @@
     </div>
   </nav>
   </div><!-- /.site-nav-bar -->
-
-  <div class="poster">
-    <div class="container poster-inner">
-      <div class="poster-mark">
-        <h1 class="poster-wordmark"><span>earth haul</span><span>excavations</span></h1>
-        <p class="poster-sub"><span>Est. 2019</span><span>&copy; <span id="poster-year">2026</span></span></p>
-      </div>
-      <div class="poster-meta">
-        <p class="poster-descriptor">Owner-operated excavation, earthworks, plumbing, drainage and demolition across Benalla and the surrounding region. Every job quoted fair and finished properly.</p>
-        <dl class="poster-grid">
-          <div><dt>Based</dt><dd>Benalla, VIC</dd></div>
-          <div><dt>Operator</dt><dd>Braeden McCarthy</dd></div>
-          <div><dt>Hours</dt><dd>Mon - Sun</dd></div>
-          <div><dt>ABN</dt><dd>59 471 717 786</dd></div>
-        </dl>
-        <div class="poster-cta">
-          <a href="#contact" class="btn btn-mark btn-lg">Request a Quote</a>
-          <a href="tel:0437142499" class="btn btn-mark-ghost btn-lg">Call 0437 142 499</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </header>
 
 <main id="main">
 
-  <section class="hero-photo" aria-label="Earth Haul Excavations on site">
-    <img src="assets/hero/excavator-branded-rural-mountains.webp" alt="Earth Haul Excavations branded Kobelco excavator on a rural Benalla earthworks site with mountains in the background" width="1300" height="800" fetchpriority="high">
+  <section class="hero">
+    <img src="assets/hero/excavator-branded-rural-mountains.webp" alt="Earth Haul Excavations branded Kobelco excavator on a rural Benalla earthworks site with mountains in the background" class="hero-image" width="1300" height="800" fetchpriority="high">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <h1>Excavation &amp; Earthworks<br>in Benalla.</h1>
+    </div>
+    <p class="hero-strap">Owner-operated excavation, earthworks, plumbing &amp; drainage. Servicing Benalla and surrounding areas.</p>
   </section>
 
   <section id="services" class="services">
