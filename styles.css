@@ -116,7 +116,9 @@ p { margin: 0 0 1em; }
   align-items: center;
   padding: 1.25rem clamp(1rem, 3vw, 2.5rem);
   pointer-events: none;
+  transition: transform 240ms ease;
 }
+.site-nav-bar.is-hidden { transform: translateY(-120%); }
 .site-nav-bar > * { pointer-events: auto; }
 
 .brand { display: inline-flex; align-items: center; color: var(--white); }

@@ -7,6 +7,46 @@
     if (el) el.textContent = year;
   });
 
+  // Hide nav on scroll down, reveal on scroll up
+  const navBar = document.querySelector('.site-nav-bar');
+  if (navBar) {
+    let lastY = window.scrollY;
+    let ticking = false;
+    const SHOW_THRESHOLD = 80;
+    const DELTA = 6;
+    const closeOpenMegas = () => {
+      document.querySelectorAll('.mega-item .mega-trigger[aria-expanded="true"]').forEach((t) => {
+        t.setAttribute('aria-expanded', 'false');
+        const id = t.getAttribute('aria-controls');
+        const panel = id ? document.getElementById(id) : null;
+        if (panel) panel.hidden = true;
+      });
+    };
+    const onScroll = () => {
+      const y = window.scrollY;
+      const goingDown = y > lastY + DELTA;
+      const goingUp = y < lastY - DELTA;
+      if (y < SHOW_THRESHOLD) {
+        navBar.classList.remove('is-hidden');
+      } else if (goingDown) {
+        if (!navBar.classList.contains('is-hidden')) {
+          navBar.classList.add('is-hidden');
+          closeOpenMegas();
+        }
+      } else if (goingUp) {
+        navBar.classList.remove('is-hidden');
+      }
+      if (goingDown || goingUp) lastY = y;
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(onScroll);
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
   // Mobile nav toggle
   const toggle = document.querySelector('.nav-toggle');
   const mobileNav = document.getElementById('mobile-menu');
