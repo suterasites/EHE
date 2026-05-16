@@ -450,7 +450,6 @@ p { margin: 0 0 1em; }
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
   gap: 1rem;
 }
 .gallery-item {
@@ -462,26 +461,12 @@ p { margin: 0 0 1em; }
 .gallery-item img {
   width: 100%; height: 100%; object-fit: cover;
 }
-.gallery-item figcaption {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.85) 100%);
-  color: var(--white);
-  padding: 2.5rem 1.25rem 1rem;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-.gallery-wide { grid-column: span 2; aspect-ratio: 16/10; }
 
 @media (max-width: 900px) {
   .gallery { grid-template-columns: repeat(2, 1fr); }
-  .gallery-wide { grid-column: span 2; }
 }
 @media (max-width: 560px) {
   .gallery { grid-template-columns: 1fr; }
-  .gallery-wide { grid-column: span 1; }
 }
 
 /* Reviews */
