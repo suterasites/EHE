@@ -368,9 +368,19 @@ p { margin: 0 0 1em; }
   overflow: hidden;
   display: flex; flex-direction: column;
   border: 1px solid var(--grey-100);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.12);
+  border-color: var(--orange);
 }
 .service-media { aspect-ratio: 16 / 10; overflow: hidden; background: var(--grey-100); }
-.service-media img { width: 100%; height: 100%; object-fit: cover; }
+.service-media img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 400ms ease;
+}
+.service-card:hover .service-media img { transform: scale(1.04); }
 .service-body { padding: 1.5rem 1.75rem 2rem; }
 .service-body h3 { color: var(--black); margin-bottom: 0.65rem; }
 .service-body p { color: var(--grey-500); margin-bottom: 1rem; }
