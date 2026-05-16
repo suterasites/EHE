@@ -78,13 +78,13 @@ Branded vehicle shots. Use for an About / Trust / Equipment band - demonstrates 
 
 **About copy (existing, verbatim):** "Earth Haul Excavations is a local business based in Benalla, Victoria. We have the experience, tools and talent to complete any project with a professional operator committed to providing a prompt and reliable service with competitive prices."
 
-**About copy (rewritten for mockup - owner-operator first-person, direct):**
+**About copy (rewritten for mockup - third-person, owner-operator):**
 
-> H2: Local, owner-operated, on the gear myself.
+> H2: Local, owner-operated, hands-on every job.
 >
-> I'm Braeden McCarthy, and Earth Haul Excavations has been my business since I started out of Benalla on my own. I work alone - which means the bloke who quotes your job is the same bloke digging it.
+> Earth Haul Excavations is the owner-operated business of Braeden McCarthy, based in Benalla. The business is intentionally small - one operator, one machine - so every quote and every job goes through the same person, from first phone call to final clean-up.
 >
-> I cover excavation, earthworks, plumbing, drainage, dams, post holes and demolition across Benalla and the surrounding region. Whatever the job, you get a fair price up front and the work done properly before I leave site.
+> Services cover excavation, earthworks, plumbing, drainage, dams, post holes and demolition across Benalla and the surrounding region. Every job is quoted fair, started on time, and finished properly before the gear leaves site.
 
 **Operator:** Braeden McCarthy
 **Phone:** 0437 142 499
