@@ -1,8 +1,11 @@
 (function () {
   'use strict';
 
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+  const year = String(new Date().getFullYear());
+  ['year', 'poster-year'].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = year;
+  });
 
   // Mobile nav toggle
   const toggle = document.querySelector('.nav-toggle');
