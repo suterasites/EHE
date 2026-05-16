@@ -135,12 +135,78 @@
     </a>
 
     <nav class="primary-nav" aria-label="Primary navigation">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="mega-nav">
+
+        <li class="mega-item" data-mega="services">
+          <button type="button" class="mega-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-services">
+            Services <span class="mega-caret" aria-hidden="true"></span>
+          </button>
+          <div id="mega-services" class="mega-panel" role="region" aria-label="Services menu" hidden>
+            <div class="container mega-panel-inner">
+              <div class="mega-col mega-col-feature">
+                <p class="mega-eyebrow">What I do</p>
+                <h3 class="mega-headline">Excavation, earthworks &amp; drainage across the Benalla region.</h3>
+                <p class="mega-blurb">One operator, one machine. Backyard clean-ups through to full site cuts, dam builds and drainage runs.</p>
+                <a href="#contact" class="link-arrow">Get a fair quote <span aria-hidden="true">&rarr;</span></a>
+              </div>
+              <div class="mega-col mega-col-links">
+                <a href="#services" class="mega-link">
+                  <span class="mega-link-title">Excavation &amp; Earthworks</span>
+                  <span class="mega-link-sub">Site cuts, bulk earthworks, levelling, detailed digging.</span>
+                </a>
+                <a href="#services" class="mega-link">
+                  <span class="mega-link-title">Plumbing, Drainage &amp; Trenching</span>
+                  <span class="mega-link-sub">Drainage installs, stormwater, service trenching, pipe laying.</span>
+                </a>
+                <a href="#services" class="mega-link">
+                  <span class="mega-link-title">Landscaping &amp; Dams</span>
+                  <span class="mega-link-sub">New dams, retaining walls, post holes to 2m, material supplies.</span>
+                </a>
+                <a href="#services" class="mega-link">
+                  <span class="mega-link-title">Site Cleaning &amp; Demolition</span>
+                  <span class="mega-link-sub">Demolition, site clean-ups, waste removal, block prep.</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="mega-item" data-mega="about">
+          <button type="button" class="mega-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-about">
+            About <span class="mega-caret" aria-hidden="true"></span>
+          </button>
+          <div id="mega-about" class="mega-panel" role="region" aria-label="About menu" hidden>
+            <div class="container mega-panel-inner">
+              <div class="mega-col mega-col-feature">
+                <p class="mega-eyebrow">About Earth Haul</p>
+                <h3 class="mega-headline">Braeden McCarthy - solo operator, Benalla based.</h3>
+                <p class="mega-blurb">You ring me, you deal with me, and I'm the one on the gear. Years on the tools around the Benalla region, Monday to Sunday.</p>
+                <a href="#about" class="link-arrow">Read more <span aria-hidden="true">&rarr;</span></a>
+              </div>
+              <div class="mega-col mega-col-links">
+                <a href="#about" class="mega-link">
+                  <span class="mega-link-title">About Braeden</span>
+                  <span class="mega-link-sub">Owner-operator. One bloke, one phone number, one machine.</span>
+                </a>
+                <a href="#about" class="mega-link">
+                  <span class="mega-link-title">Service Area</span>
+                  <span class="mega-link-sub">Benalla and surrounding areas across regional VIC.</span>
+                </a>
+                <a href="#projects" class="mega-link">
+                  <span class="mega-link-title">Recent Work</span>
+                  <span class="mega-link-sub">Real jobs from around the region - site prep, dams, drainage.</span>
+                </a>
+                <a href="#reviews" class="mega-link">
+                  <span class="mega-link-title">Reviews</span>
+                  <span class="mega-link-sub">What customers have said - in their own words.</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="#projects" class="mega-direct">Projects</a></li>
+        <li><a href="#contact" class="mega-direct">Contact</a></li>
       </ul>
     </nav>
 
@@ -154,12 +220,31 @@
   </div>
 
   <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation" hidden>
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="mobile-mega">
+      <li>
+        <button type="button" class="mobile-mega-trigger" aria-expanded="false" aria-controls="mobile-mega-services">
+          Services <span class="mega-caret" aria-hidden="true"></span>
+        </button>
+        <ul id="mobile-mega-services" class="mobile-mega-panel" hidden>
+          <li><a href="#services">Excavation &amp; Earthworks</a></li>
+          <li><a href="#services">Plumbing, Drainage &amp; Trenching</a></li>
+          <li><a href="#services">Landscaping &amp; Dams</a></li>
+          <li><a href="#services">Site Cleaning &amp; Demolition</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mobile-mega-trigger" aria-expanded="false" aria-controls="mobile-mega-about">
+          About <span class="mega-caret" aria-hidden="true"></span>
+        </button>
+        <ul id="mobile-mega-about" class="mobile-mega-panel" hidden>
+          <li><a href="#about">About Braeden</a></li>
+          <li><a href="#about">Service Area</a></li>
+          <li><a href="#projects">Recent Work</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </li>
+      <li><a href="#projects" class="mobile-direct">Projects</a></li>
+      <li><a href="#contact" class="mobile-direct">Contact</a></li>
     </ul>
     <div class="mobile-nav-cta">
       <a href="tel:0437142499" class="btn btn-primary btn-block">Call 0437 142 499</a>
