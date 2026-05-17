@@ -106,6 +106,11 @@ p { margin: 0 0 1em; }
 .btn-lg { padding: 1.05rem 2rem; font-size: 1rem; }
 .btn-block { width: 100%; }
 
+.btn { transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease; }
+.btn-primary:hover { background: var(--orange-dark); border-color: var(--orange-dark); transform: translateY(-2px); box-shadow: 0 8px 18px rgba(232, 90, 31, 0.35); }
+.btn-ghost:hover { background: var(--white); color: var(--black); transform: translateY(-2px); }
+.btn-dark:hover { background: var(--charcoal); border-color: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); }
+
 /* Header - floating pill nav over hero */
 .site-header { background: transparent; color: var(--white); }
 .site-nav-bar {
@@ -153,6 +158,12 @@ p { margin: 0 0 1em; }
   display: inline-flex; align-items: center; gap: 0.4rem;
   border-bottom: 0;
   border-radius: 999px;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+.primary-nav a:hover,
+.primary-nav .mega-trigger:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--orange-bright);
 }
 .primary-nav .mega-trigger[aria-expanded="true"] {
   background: rgba(255,255,255,0.12);
@@ -238,6 +249,13 @@ p { margin: 0 0 1em; }
   font-size: 0.85rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+.btn-quote:hover {
+  background: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(232, 90, 31, 0.4);
 }
 
 .nav-toggle {
