@@ -560,19 +560,7 @@ p { margin: 0 0 1em; }
   display: flex; flex-direction: column;
   min-height: 320px;
 }
-.review-source {
-  position: absolute;
-  top: 1.25rem; right: 1.25rem;
-  width: 36px; height: 36px;
-  display: inline-flex; align-items: center; justify-content: center;
-  background: #000;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: background 150ms ease, transform 150ms ease;
-}
-.review-source:hover { background: #1f1f1f; transform: scale(1.05); }
-.review-source svg { width: 16px; height: 16px; }
-.review-card blockquote { margin: 0 0 2rem; flex-grow: 1; padding-right: 2.5rem; }
+.review-card blockquote { margin: 0 0 2rem; flex-grow: 1; }
 .review-card blockquote p {
   color: var(--white);
   font-family: var(--font-body);
