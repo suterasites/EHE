@@ -314,17 +314,32 @@ p { margin: 0 0 1em; }
 .mobile-nav-cta { margin-top: 1rem; }
 
 @media (max-width: 960px) {
+  .site-nav-bar {
+    background: var(--black);
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    pointer-events: auto;
+  }
   .primary-nav, .header-cta { display: none; }
   .brand-mobile { display: inline-flex; }
-  .brand-mobile .brand-logo { height: 44px; }
-  .nav-toggle { display: flex; }
+  .brand-mobile .brand-logo { height: 40px; }
+  .nav-toggle {
+    display: flex;
+    background: transparent;
+    border: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0.5rem;
+    border-radius: 0;
+  }
   .mobile-nav:not([hidden]) {
     display: block;
     position: fixed; top: 0; left: 0; right: 0; z-index: 49;
-    margin-top: 76px;
-    border-radius: 12px;
-    width: calc(100% - 2rem);
-    margin-inline: 1rem;
+    margin-top: 66px;
+    width: 100%;
+    margin-inline: 0;
+    border-radius: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
   }
 }
 
