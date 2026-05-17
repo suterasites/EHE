@@ -596,13 +596,6 @@ p { margin: 0 0 1em; }
   margin: 0;
   line-height: 1.2;
 }
-.review-handle {
-  color: #888;
-  font-size: 0.85rem;
-  margin: 2px 0 0;
-  line-height: 1.2;
-}
-
 @media (max-width: 900px) {
   .review-grid { grid-template-columns: 1fr; }
   .reviews { padding: 4rem 0 5rem; }
